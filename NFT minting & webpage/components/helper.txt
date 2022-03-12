@@ -1,0 +1,1 @@
+npx ts-node ./metaplex/js/packages/cli/src/candy-machine-v2-cli.ts mint_one_token -e devnet -k keypair.json
