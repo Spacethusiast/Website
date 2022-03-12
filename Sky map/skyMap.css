@@ -1,0 +1,54 @@
+#video-container {
+	width: 840px;
+	height: 472px;
+	position: relative;
+}
+
+#video-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 3px;
+	opacity: 0;
+	-webkit-transition: opacity .1s;
+	-moz-transition: opacity .1s;
+	-o-transition: opacity .1s;
+	-ms-transition: opacity .1s;
+	transition: opacity .1s;
+	background-image: linear-gradient(bottom, rgb(237,74,10) 13%, rgb(237,74,10) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(237,74,10) 13%, rgb(237,74,10) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(237,74,10) 13%, rgb(237,74,10) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(237,74,10) 13%, rgb(237,74,10) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(237,74,10) 13%, rgb(237,74,10) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.53, rgb(0,0,0)),
+		color-stop(1, rgb(0, 0, 0))
+	);
+}
+
+#video-container:hover #video-controls {
+	opacity: .9;
+}
+
+button {
+	background: rgb(83, 172, 255);
+	border: 0;
+	color: rgb(255, 255, 255);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#seek-bar {
+	width: 690px;
+}
