@@ -4,12 +4,15 @@ window.onload = function() {
 	var playButton = document.getElementById("play-pause");
 	var fullScreenButton = document.getElementById("full-screen");
 	var seekBar = document.getElementById("seek-bar");
-    var today = new Date();
-    var time = (today.getHours() - 12 + today.getMinutes()/60) * 7.167;
+	if(today.getHours() > 12) {
+        	var time = (today.getHours() - 12 + today.getMinutes()/60) * 7.156;
+    	} else {
+        	var time = (today.getHours() + today.getMinutes()/60) * 7.156;
+    	}
     
-    document.getElementById('video').addEventListener('loadedmetadata', function() {
-        this.currentTime = time;
-    },  false);
+    	document.getElementById('video').addEventListener('loadedmetadata', function() {
+        	this.currentTime = time;
+    	},  false);
 
 	playButton.addEventListener("click", function() {
 		if (video.paused == true) {
