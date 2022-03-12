@@ -5,9 +5,9 @@ window.onload = function() {
 	var fullScreenButton = document.getElementById("full-screen");
 	var seekBar = document.getElementById("seek-bar");
 	if(today.getHours() > 12) {
-        	var time = (today.getHours() - 12 + today.getMinutes()/60) * 7.156;
+        	var time = (today.getHours() - 12 + today.getMinutes()/60) * 7.14;
     	} else {
-        	var time = (today.getHours() + today.getMinutes()/60) * 7.156;
+        	var time = (today.getHours() + today.getMinutes()/60) * 7.14;
     	}
     
     	document.getElementById('video').addEventListener('loadedmetadata', function() {
