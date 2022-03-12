@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+
+{% block title %}
+News Page
+{% endblock %}
+
+
+{% block content %}
+<section class="page-section bg-black" id="news">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-light">Latest news</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#news1">
+                            <div class="card" style="width: 26rem;">
+                                <img src="{{imgSource1}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle1}}</h2>
+                                    </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news2">
+                            <div class="card" style="width: 26rem;">
+                                <img src="{{imgSource2}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle2}}</h2>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news3">
+                            <div class="card" style="width: 26rem;">
+                                <img src={{imgSource3}} class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle3}}</h2>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news4">
+                            <div class="card" style="width: 26rem;">
+                                <img src={{imgSource4}} class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle4}}</h2>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news5">
+                            <div class="card" style="width: 26rem;">
+                                <img src={{imgSource5}} class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle5}}</h2>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news6">
+                            <div class="card" style="width: 26rem;">
+                                <img src={{imgSource6}} class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle6}}</h2>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
+
+{%block extra%}
+        <!-- News Modals-->
+        <!-- News item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="news1" tabindex="-1" role="dialog" aria-hidden="true"3>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle1}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource1}}" alt="..." />
+                                    <p>{{newsContent1}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="news2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle2}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource2}}" alt="..." />
+                                    <p>{{newsContent2}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="news3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle3}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource3}}" alt="..." />
+                                    <p>{{newsContent3}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="news4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle4}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource4}}" alt="..." />
+                                    <p>{{newsContent4}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="news5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle5}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource5}}" alt="..." />
+                                    <p>{{newsContent5}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="news6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="/static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle6}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource6}}" alt="..." />
+                                    <p>{{newsContent6}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{%endblock%}
