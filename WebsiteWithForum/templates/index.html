@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Spacethusiasts</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/static/assets/img/favicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts--><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black bg-opacity-75" id="mainNav">
+            <a class="navbar-brand text-light" href="#">Spacethusiasts</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link text-light" href="#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#timeline">Timeline</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#map">Maps</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#">Forum</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#forum">Live cam</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading text-uppercase">Hello fellow space enjoyer!</div>
+                <div class="masthead-heading text-uppercase">welcome to Spacethusiasts!</div>
+                <a class="btn btn-primary btn-xl text-uppercase bg-opacity-75" href="#news">Explore!</a>
+                <div class="masthead-heading">‎‎‎‎‎‎</div>
+            </div>
+        </header>
+        <!-- News-->
+        <section class="page-section bg-black" id="news">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-light">Latest news</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#news1">
+                            <div class="card" style="width: 26rem;">
+                                <img src="{{imgSource1}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle1}}</h2>
+                                        <p class="card-text text-black">{{newsSubtitle1}}</p>
+                                    </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news2">
+                            <div class="card" style="width: 26rem;">
+                                <img src="{{imgSource2}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle2}}</h2>
+                                        <p class="card-text text-black">{{newsSubtitle2}}</p>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#news3">
+                            <div class="card" style="width: 26rem;">
+                                <img src={{imgSource3}} class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="text-black">{{newsTitle3}}</h2>
+                                        <p class="card-text text-black">{{newsSubtitle3}}</p>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <div class="container">
+                    <div class="center">
+                        <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('news_page') }}">More news</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Timeline of the universe-->
+        <section class="page-section bg-black" id="timeline">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-white">Timeline of the universe</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <ul class="timeline text-white">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-uppercase">The Big Bang</h4>
+                                <h4 class="subheading">13 Billions of Years Ago</h4>
+                            </div>
+                            <div class="timeline-body "><p class="">The universe as we know it started with an infinitely hot and dense single point that inflated and stretched — first at unimaginable speeds, and then at a more measurable rate and it's still expanding today.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel text-white" >
+                            <div class="timeline-heading">
+                                <h4 class="text-uppercase">The forming of the Milky Way</h4>
+                                <h4 class="subheading">10 Billions of Years Ago</h4>
+                            </div>
+                            <div class="timeline-body"><p class="">Milky Way galaxy came together nearly 14 billion years ago when enormous clouds of gas and dust coalesced under the force of gravity!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-uppercase">The forming of the Solar System</h4>
+                                <h4 class="subheading">4.5 Billions of Years Ago</h4>
+                            </div>
+                            <div class="timeline-body"><p class="">The formation of the Solar System began with the gravitational collapse of a small part of a giant molecular cloud. Most of the collapsing mass collected in the center, forming the Sun, while the rest flattened into a protoplanetary disk out of which the planets, moons, asteroids, and other small Solar System bodies formed.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-uppercase">the beginning of life on earth</h4>
+                                <h4 class="subheading">3.5 Billions of Years Ago</h4>
+                            </div>
+                            <div class="timeline-body"><p class="">The earliest life forms we know of were microscopic organisms.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/assets/img/about/5.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-uppercase">The first Dinosaurs</h4>
+                                <h4 class="subheading">230 Millions of Years Ago</h4>
+                            </div>
+                            <div class="timeline-body"><p class="">Dinosaurs were a successful group of animals that emerged 230 million years ago. During that time, dinosaurs evolved  into the most enormous beasts that ever existed on land.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/assets/img/about/6.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-uppercase">homo sapiens appear</h4>
+                                <h4 class="subheading">200 000 Years Ago</h4>
+                            </div>
+                            <div class="timeline-body"><p class="">Modern humans originated in Africa within the past 200,000 years and evolved from their most likely recent common ancestor, Homo erectus, which means 'upright man' in Latin. Homo erectus is an extinct species of human that lived between 1.9 million and 135,000 years ago.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image bg-black">
+                            <h4>
+                                <br />
+                                Today
+                                <br />
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Maps-->
+        <section class="page-section bg-black" id="map">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-white">Maps of the universe</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <div class="row">
+                    <div class="col text-white text-center">
+                        <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('milky_map_page') }}">Map of the universe</a>
+                    </div>
+                    <div class="col text-white text-center">
+                        <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('sky_map_page') }}">Map of the sky</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Forum-->
+        <section class="page-section bg-black" id="forum">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-white">Our community forum</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <div class="row">
+                    <div class="col text-white text-center">
+                    </div>
+                    <div class="col text-white text-center">
+                        <a class="btn btn-primary btn-xl text-uppercase" href="{{ url_for('forum_page') }}">Take a look!</a>
+                    </div>
+                    <div class="col text-white text-center">
+                    </div>
+                </div>
+            </div>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4 bg-black">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start text-white">Copyright &copy; 69420</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3  text-white">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none me-3  text-white">AnMe3z grinding</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- News Modals-->
+        <!-- News item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="news1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle1}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource1}}" alt="..." />
+                                    <p>{{newsContent1}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="news2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle2}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource2}}" alt="..." />
+                                    <p>{{newsContent2}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="news3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="static/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">{{newsTitle3}}</h2>
+                                    <p class="item-intro text-muted">by spacenews.com</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{imgSource3}}" alt="..." />
+                                    <p>{{newsContent3}}</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

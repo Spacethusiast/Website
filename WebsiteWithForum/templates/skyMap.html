@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Sky Map
+{% endblock %}
+
+
+{% block head %}
+	<link rel="stylesheet" href="/static/assets/sky_map/skyMap.css">
+{% endblock %}
+
+{% block content %}
+<section class="page-section bg-black" id="news">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-light">Map of the Milky Way</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                        <div class="center">
+							<div id="video-container">
+								<video id="video" width="840" height="465">
+								  <source src="/static/assets/sky_map/12-14.03.2022_sky_map.mp4" type="video/mp4">
+								</video>
+
+								<div id="video-controls">
+									<button type="button" id="play-pause" class="play">Play</button>
+										<input type="range" id="seek-bar" value="0">
+									<button type="button" id="full-screen">Full-Screen</button>
+								</div>
+							</div>
+						</div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">‎‎‎‎‎‎</h2>
+                </div>
+
+            </div>
+</section>
+{% endblock %}
+
+{% block extra %}
+	<script src="/static/assets/sky_map/skyMap.js"></script>
+{%endblock%}
